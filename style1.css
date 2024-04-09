@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #5358a2, #ac20e4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    background-image: linear-gradient(45deg,rgb(74, 74, 147) 30%,rgb(160, 78, 160) 50%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #0f1d2b;
+    cursor: pointer;
+}
+
+span {
+    color: #103f70;
+}
+span:hover{
+    color: aqua;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.text-to-speech-container,
+.speech-to-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 4px solid #0d57a0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+select, button {
+    padding: 10px;
+    margin: 0 5px;
+    text-align: center;
+}
+#speech-controls{
+   align-items: right;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: right
+    align-items 
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.words {
+    margin-top: 20px;
+}
+
+.speech-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.speech-controls button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: right;
+}
+
+.speech-controls button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#output {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #0d57a0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
